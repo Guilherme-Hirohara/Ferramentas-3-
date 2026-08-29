@@ -1,0 +1,72 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Componentes
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-list>
+    <ion-item>
+      <ion-input label="Nome" [(ngModel)]="pessoa.nome"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input label="Endereço" [(ngModel)]="pessoa.endereco"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input label="Salário" type="number" [(ngModel)]="pessoa.salario"></ion-input>
+    </ion-item>
+    <!-- <ion-item>
+      <ion-input label="Idade"></ion-input>
+    </ion-item> -->
+  </ion-list>
+
+  <ion-button expand="block" (click)="adicionar()">
+    Adicionar
+  </ion-button>
+
+  <!-- <ion-button>
+    <ion-icon name="heart"></ion-icon>
+  </ion-button> -->
+
+  @if(pessoas.length > 0){
+    <h3>Pessoas</h3>
+    <ion-grid>
+      <ion-row>
+          <ion-col>
+            Nome 
+          </ion-col>
+          <ion-col>
+            Endereço 
+          </ion-col>
+          <ion-col>
+            Salário
+          </ion-col>
+          <ion-col size="1">
+            Deletar
+          </ion-col>
+        </ion-row>
+      @for(item of pessoas; track $index){
+        <ion-row>
+          <ion-col>
+            {{item.nome}} 
+          </ion-col>
+          <ion-col>
+            {{item.endereco}}
+          </ion-col>
+          <ion-col>
+            {{item.salario}}
+          </ion-col>
+          <ion-col size="1">
+            <ion-button (click)="deletar($index)">
+              <ion-icon name="trash-outline"></ion-icon>
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      } 
+    </ion-grid>
+  }
+
+</ion-content>

@@ -1,0 +1,60 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Marcador de truco
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-grid>
+
+
+    <ion-row>
+      <ion-col>
+        <h1><strong>Nós</strong></h1>
+      </ion-col>
+      <ion-col>
+        <h1><strong>Eles</strong></h1>
+      </ion-col>
+    </ion-row>
+
+    <ion-row style="font-size: xx-large;">
+      <ion-col>
+        {{marcador.nos}}
+      </ion-col>
+      <ion-col>
+        {{marcador.eles}}
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-button (click)="pontuar(true)">+{{pontos}}</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button (click)="pontuar(false)">+{{pontos}}</ion-button>
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row>
+      <ion-col>
+        <ion-button (click)="tirarPontos(true)">-1</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button (click)="tirarPontos(false)">-1</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-button id="botao-truco" (click)="truco()">
+          TRUCO
+          <ion-icon name="hand-right-outline"></ion-icon> 
+        </ion-button>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+</ion-content>
