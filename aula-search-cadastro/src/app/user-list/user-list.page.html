@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-button routerLink="/usuario-cadastro" slot="end"> 
+      <ion-icon slot="icon-only" name="add-circle-outline" ></ion-icon>
+    </ion-button>
+    
+    <ion-title>Listagem</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-searchbar [debounce]="1000" (ionInput)="handleInput($event)"></ion-searchbar>
+  <ion-list>
+    @for(item of users(); track $index){
+        <ion-item>
+          <ion-label>{{item.id}}</ion-label>
+          <ion-label>{{item.first_name}}</ion-label>
+          <ion-button (click)="deletarPeloId(item.id)">
+            <ion-icon name="trash" ></ion-icon>
+          </ion-button>
+        </ion-item>
+      }
+    </ion-list>
+    
+</ion-content>
