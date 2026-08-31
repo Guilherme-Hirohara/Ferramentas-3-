@@ -13,9 +13,6 @@ Este ecossistema utiliza as seguintes tecnologias modernas de desenvolvimento we
 * **[Ionic Framework](https://ionicframework.com/)**: UI toolkit para construção de experiências nativas e web de alto desempenho.
 * **[Angular](https://angular.dev/)**: Framework de aplicação web para gerenciamento de componentes, rotas, serviços e estados.
 * **[TypeScript](https://www.typescriptlang.org/)**: Tipagem estática e recursos avançados de JavaScript.
-* **[Capacitor](https://capacitorjs.com/)**: Runtime nativo para execução cross-platform em Android e iOS.
-* **RxJS**: Programação reativa para manipulação de eventos e fluxos assíncronos.
-* **SASS / SCSS**: Estilização modular e temas personalizados.
 
 ---
 
