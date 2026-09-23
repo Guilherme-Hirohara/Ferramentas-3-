@@ -1,0 +1,52 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Lista de Vendas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-select label="Vendas" placeholder="Selecione" justify="between" (ionChange)="handleEvent($event)">
+    @for(item of vendas(); track $index){
+      <ion-select-option value="{{item.id}}">{{item.cliente}} - {{item.data}}</ion-select-option>
+    }
+    <ion-button color="danger" slot="end" (click)="deletarVenda()">Excluir</ion-button>
+  </ion-select>
+  @if(id){
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          Produto 
+        </ion-col>
+        <ion-col>
+          Qtd.
+        </ion-col>
+        <ion-col>
+          Preço Unit.
+        </ion-col>
+        <ion-col>
+          Subtotal 
+        </ion-col>
+      </ion-row>
+      @for(item of itens(); track $index){
+        <ion-row> 
+          <ion-col>
+            {{item.produto}}
+          </ion-col>
+          <ion-col>
+            {{item.quantidade}}
+          </ion-col>
+          <ion-col>
+            {{item.valorUnitario |currency}}
+          </ion-col>
+          <ion-col>
+            {{subTotal(item.quantidade, item.valorUnitario) | currency}}
+          </ion-col>
+        </ion-row>
+      }
+    </ion-grid>
+    <p>Total: {{total | currency}}</p>
+  }
+  @else {
+    <h3 style="color: red; text-align: center;">Selecione uma Venda</h3>
+  }
+</ion-content>

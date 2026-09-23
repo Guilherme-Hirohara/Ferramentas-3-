@@ -1,0 +1,906 @@
+{
+  "vendas": [
+    {
+      "id": 1,
+      "cliente": "Ana Souza",
+      "data": "2026-01-01",
+      "itens": [
+        {
+          "id": 1,
+          "produto": "Camiseta Básica",
+          "quantidade": 1,
+          "valorUnitario": 39.9
+        },
+        {
+          "id": 2,
+          "produto": "Pulseira",
+          "quantidade": 5,
+          "valorUnitario": 24.9
+        },
+        {
+          "id": 3,
+          "produto": "Tênis Casual",
+          "quantidade": 1,
+          "valorUnitario": 179.9
+        },
+        {
+          "id": 4,
+          "produto": "Tênis Esportivo",
+          "quantidade": 5,
+          "valorUnitario": 199.9
+        },
+        {
+          "id": 5,
+          "produto": "Bermuda",
+          "quantidade": 4,
+          "valorUnitario": 69.9
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "cliente": "Bruno Lima",
+      "data": "2026-08-19",
+      "itens": [
+        {
+          "id": 6,
+          "produto": "Moletom",
+          "quantidade": 5,
+          "valorUnitario": 119.9
+        },
+        {
+          "id": 7,
+          "produto": "Tênis Esportivo",
+          "quantidade": 2,
+          "valorUnitario": 199.9
+        },
+        {
+          "id": 8,
+          "produto": "Saia",
+          "quantidade": 5,
+          "valorUnitario": 79.9
+        },
+        {
+          "id": 9,
+          "produto": "Óculos de Sol",
+          "quantidade": 4,
+          "valorUnitario": 89.9
+        },
+        {
+          "id": 10,
+          "produto": "Camiseta Básica",
+          "quantidade": 2,
+          "valorUnitario": 39.9
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "cliente": "Carla Mendes",
+      "data": "2026-02-13",
+      "itens": [
+        {
+          "id": 11,
+          "produto": "Regata",
+          "quantidade": 4,
+          "valorUnitario": 29.9
+        },
+        {
+          "id": 12,
+          "produto": "Chinelo",
+          "quantidade": 3,
+          "valorUnitario": 29.9
+        },
+        {
+          "id": 13,
+          "produto": "Camiseta Básica",
+          "quantidade": 3,
+          "valorUnitario": 39.9
+        },
+        {
+          "id": 14,
+          "produto": "Colar",
+          "quantidade": 2,
+          "valorUnitario": 39.9
+        },
+        {
+          "id": 15,
+          "produto": "Luva",
+          "quantidade": 2,
+          "valorUnitario": 22.9
+        },
+        {
+          "id": 16,
+          "produto": "Jaqueta Corta-Vento",
+          "quantidade": 3,
+          "valorUnitario": 159.9
+        },
+        {
+          "id": 17,
+          "produto": "Bolsa",
+          "quantidade": 1,
+          "valorUnitario": 169.9
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "cliente": "Diego Alves",
+      "data": "2026-02-18",
+      "itens": [
+        {
+          "id": 18,
+          "produto": "Mochila",
+          "quantidade": 1,
+          "valorUnitario": 149.9
+        },
+        {
+          "id": 19,
+          "produto": "Chinelo",
+          "quantidade": 4,
+          "valorUnitario": 29.9
+        },
+        {
+          "id": 20,
+          "produto": "Óculos de Sol",
+          "quantidade": 5,
+          "valorUnitario": 89.9
+        },
+        {
+          "id": 21,
+          "produto": "Tênis Casual",
+          "quantidade": 1,
+          "valorUnitario": 179.9
+        },
+        {
+          "id": 22,
+          "produto": "Regata",
+          "quantidade": 4,
+          "valorUnitario": 29.9
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "cliente": "Elaine Costa",
+      "data": "2026-07-09",
+      "itens": [
+        {
+          "id": 23,
+          "produto": "Casaco de Lã",
+          "quantidade": 1,
+          "valorUnitario": 199.9
+        },
+        {
+          "id": 24,
+          "produto": "Relógio",
+          "quantidade": 1,
+          "valorUnitario": 249.9
+        },
+        {
+          "id": 25,
+          "produto": "Óculos de Sol",
+          "quantidade": 2,
+          "valorUnitario": 89.9
+        },
+        {
+          "id": 26,
+          "produto": "Mochila",
+          "quantidade": 3,
+          "valorUnitario": 149.9
+        },
+        {
+          "id": 27,
+          "produto": "Short",
+          "quantidade": 1,
+          "valorUnitario": 44.9
+        },
+        {
+          "id": 28,
+          "produto": "Moletom",
+          "quantidade": 2,
+          "valorUnitario": 119.9
+        },
+        {
+          "id": 29,
+          "produto": "Bolsa",
+          "quantidade": 1,
+          "valorUnitario": 169.9
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "cliente": "Fábio Rocha",
+      "data": "2026-07-09",
+      "itens": [
+        {
+          "id": 30,
+          "produto": "Relógio",
+          "quantidade": 3,
+          "valorUnitario": 249.9
+        },
+        {
+          "id": 31,
+          "produto": "Casaco de Lã",
+          "quantidade": 1,
+          "valorUnitario": 199.9
+        },
+        {
+          "id": 32,
+          "produto": "Mochila",
+          "quantidade": 5,
+          "valorUnitario": 149.9
+        },
+        {
+          "id": 33,
+          "produto": "Jaqueta Corta-Vento",
+          "quantidade": 2,
+          "valorUnitario": 159.9
+        },
+        {
+          "id": 34,
+          "produto": "Chinelo",
+          "quantidade": 5,
+          "valorUnitario": 29.9
+        },
+        {
+          "id": 35,
+          "produto": "Regata",
+          "quantidade": 2,
+          "valorUnitario": 29.9
+        },
+        {
+          "id": 36,
+          "produto": "Moletom",
+          "quantidade": 2,
+          "valorUnitario": 119.9
+        },
+        {
+          "id": 37,
+          "produto": "Carteira",
+          "quantidade": 4,
+          "valorUnitario": 54.9
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "cliente": "Gabriela Nunes",
+      "data": "2026-04-19",
+      "itens": [
+        {
+          "id": 38,
+          "produto": "Carteira",
+          "quantidade": 2,
+          "valorUnitario": 54.9
+        },
+        {
+          "id": 39,
+          "produto": "Boné",
+          "quantidade": 1,
+          "valorUnitario": 34.9
+        },
+        {
+          "id": 40,
+          "produto": "Casaco de Lã",
+          "quantidade": 3,
+          "valorUnitario": 199.9
+        },
+        {
+          "id": 41,
+          "produto": "Colar",
+          "quantidade": 4,
+          "valorUnitario": 39.9
+        },
+        {
+          "id": 42,
+          "produto": "Chinelo",
+          "quantidade": 3,
+          "valorUnitario": 29.9
+        },
+        {
+          "id": 43,
+          "produto": "Camiseta Estampada",
+          "quantidade": 1,
+          "valorUnitario": 49.9
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "cliente": "Henrique Dias",
+      "data": "2026-07-19",
+      "itens": [
+        {
+          "id": 44,
+          "produto": "Moletom",
+          "quantidade": 3,
+          "valorUnitario": 119.9
+        },
+        {
+          "id": 45,
+          "produto": "Relógio",
+          "quantidade": 2,
+          "valorUnitario": 249.9
+        },
+        {
+          "id": 46,
+          "produto": "Vestido",
+          "quantidade": 2,
+          "valorUnitario": 139.9
+        },
+        {
+          "id": 47,
+          "produto": "Cinto de Couro",
+          "quantidade": 5,
+          "valorUnitario": 44.9
+        },
+        {
+          "id": 48,
+          "produto": "Touca",
+          "quantidade": 5,
+          "valorUnitario": 19.9
+        },
+        {
+          "id": 49,
+          "produto": "Camisa Social",
+          "quantidade": 3,
+          "valorUnitario": 89.9
+        },
+        {
+          "id": 50,
+          "produto": "Bermuda",
+          "quantidade": 5,
+          "valorUnitario": 69.9
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "cliente": "Isabela Ramos",
+      "data": "2026-08-17",
+      "itens": [
+        {
+          "id": 51,
+          "produto": "Mochila",
+          "quantidade": 2,
+          "valorUnitario": 149.9
+        },
+        {
+          "id": 52,
+          "produto": "Tênis Esportivo",
+          "quantidade": 2,
+          "valorUnitario": 199.9
+        },
+        {
+          "id": 53,
+          "produto": "Bermuda",
+          "quantidade": 4,
+          "valorUnitario": 69.9
+        },
+        {
+          "id": 54,
+          "produto": "Saia",
+          "quantidade": 5,
+          "valorUnitario": 79.9
+        },
+        {
+          "id": 55,
+          "produto": "Vestido",
+          "quantidade": 1,
+          "valorUnitario": 139.9
+        },
+        {
+          "id": 56,
+          "produto": "Calça Jeans",
+          "quantidade": 4,
+          "valorUnitario": 129.9
+        },
+        {
+          "id": 57,
+          "produto": "Camiseta Estampada",
+          "quantidade": 4,
+          "valorUnitario": 49.9
+        },
+        {
+          "id": 58,
+          "produto": "Calça Sarja",
+          "quantidade": 5,
+          "valorUnitario": 99.9
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "cliente": "João Pereira",
+      "data": "2026-08-01",
+      "itens": [
+        {
+          "id": 59,
+          "produto": "Blusa de Frio",
+          "quantidade": 5,
+          "valorUnitario": 109.9
+        },
+        {
+          "id": 60,
+          "produto": "Chinelo",
+          "quantidade": 3,
+          "valorUnitario": 29.9
+        },
+        {
+          "id": 61,
+          "produto": "Camiseta Básica",
+          "quantidade": 3,
+          "valorUnitario": 39.9
+        },
+        {
+          "id": 62,
+          "produto": "Carteira",
+          "quantidade": 1,
+          "valorUnitario": 54.9
+        },
+        {
+          "id": 63,
+          "produto": "Pulseira",
+          "quantidade": 3,
+          "valorUnitario": 24.9
+        },
+        {
+          "id": 64,
+          "produto": "Calça Sarja",
+          "quantidade": 4,
+          "valorUnitario": 99.9
+        },
+        {
+          "id": 65,
+          "produto": "Casaco de Lã",
+          "quantidade": 2,
+          "valorUnitario": 199.9
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "cliente": "Karina Ferreira",
+      "data": "2026-01-20",
+      "itens": [
+        {
+          "id": 66,
+          "produto": "Saia",
+          "quantidade": 5,
+          "valorUnitario": 79.9
+        },
+        {
+          "id": 67,
+          "produto": "Colar",
+          "quantidade": 5,
+          "valorUnitario": 39.9
+        },
+        {
+          "id": 68,
+          "produto": "Jaqueta Corta-Vento",
+          "quantidade": 2,
+          "valorUnitario": 159.9
+        },
+        {
+          "id": 69,
+          "produto": "Luva",
+          "quantidade": 2,
+          "valorUnitario": 22.9
+        },
+        {
+          "id": 70,
+          "produto": "Calça Sarja",
+          "quantidade": 3,
+          "valorUnitario": 99.9
+        },
+        {
+          "id": 71,
+          "produto": "Relógio",
+          "quantidade": 2,
+          "valorUnitario": 249.9
+        },
+        {
+          "id": 72,
+          "produto": "Sandália",
+          "quantidade": 5,
+          "valorUnitario": 59.9
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "cliente": "Lucas Martins",
+      "data": "2026-03-05",
+      "itens": [
+        {
+          "id": 73,
+          "produto": "Vestido",
+          "quantidade": 1,
+          "valorUnitario": 139.9
+        },
+        {
+          "id": 74,
+          "produto": "Camiseta Básica",
+          "quantidade": 2,
+          "valorUnitario": 39.9
+        },
+        {
+          "id": 75,
+          "produto": "Calça Sarja",
+          "quantidade": 5,
+          "valorUnitario": 99.9
+        },
+        {
+          "id": 76,
+          "produto": "Mochila",
+          "quantidade": 1,
+          "valorUnitario": 149.9
+        },
+        {
+          "id": 77,
+          "produto": "Regata",
+          "quantidade": 1,
+          "valorUnitario": 29.9
+        },
+        {
+          "id": 78,
+          "produto": "Sandália",
+          "quantidade": 4,
+          "valorUnitario": 59.9
+        },
+        {
+          "id": 79,
+          "produto": "Tênis Esportivo",
+          "quantidade": 1,
+          "valorUnitario": 199.9
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "cliente": "Mariana Teixeira",
+      "data": "2026-04-08",
+      "itens": [
+        {
+          "id": 80,
+          "produto": "Blusa de Frio",
+          "quantidade": 2,
+          "valorUnitario": 109.9
+        },
+        {
+          "id": 81,
+          "produto": "Jaqueta Corta-Vento",
+          "quantidade": 3,
+          "valorUnitario": 159.9
+        },
+        {
+          "id": 82,
+          "produto": "Tênis Casual",
+          "quantidade": 4,
+          "valorUnitario": 179.9
+        },
+        {
+          "id": 83,
+          "produto": "Saia",
+          "quantidade": 3,
+          "valorUnitario": 79.9
+        },
+        {
+          "id": 84,
+          "produto": "Óculos de Sol",
+          "quantidade": 4,
+          "valorUnitario": 89.9
+        },
+        {
+          "id": 85,
+          "produto": "Meia (par)",
+          "quantidade": 5,
+          "valorUnitario": 12.9
+        },
+        {
+          "id": 86,
+          "produto": "Moletom",
+          "quantidade": 4,
+          "valorUnitario": 119.9
+        },
+        {
+          "id": 87,
+          "produto": "Luva",
+          "quantidade": 1,
+          "valorUnitario": 22.9
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "cliente": "Nathan Barbosa",
+      "data": "2026-04-03",
+      "itens": [
+        {
+          "id": 88,
+          "produto": "Boné",
+          "quantidade": 5,
+          "valorUnitario": 34.9
+        },
+        {
+          "id": 89,
+          "produto": "Camiseta Básica",
+          "quantidade": 2,
+          "valorUnitario": 39.9
+        },
+        {
+          "id": 90,
+          "produto": "Short",
+          "quantidade": 1,
+          "valorUnitario": 44.9
+        },
+        {
+          "id": 91,
+          "produto": "Blusa de Frio",
+          "quantidade": 1,
+          "valorUnitario": 109.9
+        },
+        {
+          "id": 92,
+          "produto": "Tênis Esportivo",
+          "quantidade": 1,
+          "valorUnitario": 199.9
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "cliente": "Olivia Cardoso",
+      "data": "2026-08-08",
+      "itens": [
+        {
+          "id": 93,
+          "produto": "Chinelo",
+          "quantidade": 3,
+          "valorUnitario": 29.9
+        },
+        {
+          "id": 94,
+          "produto": "Boné",
+          "quantidade": 4,
+          "valorUnitario": 34.9
+        },
+        {
+          "id": 95,
+          "produto": "Calça Jeans",
+          "quantidade": 2,
+          "valorUnitario": 129.9
+        },
+        {
+          "id": 96,
+          "produto": "Saia",
+          "quantidade": 5,
+          "valorUnitario": 79.9
+        },
+        {
+          "id": 97,
+          "produto": "Tênis Esportivo",
+          "quantidade": 2,
+          "valorUnitario": 199.9
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "cliente": "Paulo Henrique",
+      "data": "2026-02-08",
+      "itens": [
+        {
+          "id": 98,
+          "produto": "Regata",
+          "quantidade": 4,
+          "valorUnitario": 29.9
+        },
+        {
+          "id": 99,
+          "produto": "Meia (par)",
+          "quantidade": 4,
+          "valorUnitario": 12.9
+        },
+        {
+          "id": 100,
+          "produto": "Moletom",
+          "quantidade": 4,
+          "valorUnitario": 119.9
+        },
+        {
+          "id": 101,
+          "produto": "Calça Sarja",
+          "quantidade": 1,
+          "valorUnitario": 99.9
+        },
+        {
+          "id": 102,
+          "produto": "Casaco de Lã",
+          "quantidade": 1,
+          "valorUnitario": 199.9
+        },
+        {
+          "id": 103,
+          "produto": "Carteira",
+          "quantidade": 1,
+          "valorUnitario": 54.9
+        },
+        {
+          "id": 104,
+          "produto": "Touca",
+          "quantidade": 4,
+          "valorUnitario": 19.9
+        },
+        {
+          "id": 105,
+          "produto": "Mochila",
+          "quantidade": 3,
+          "valorUnitario": 149.9
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "cliente": "Queila Santos",
+      "data": "2026-02-02",
+      "itens": [
+        {
+          "id": 106,
+          "produto": "Moletom",
+          "quantidade": 3,
+          "valorUnitario": 119.9
+        },
+        {
+          "id": 107,
+          "produto": "Blusa de Frio",
+          "quantidade": 4,
+          "valorUnitario": 109.9
+        },
+        {
+          "id": 108,
+          "produto": "Camisa Social",
+          "quantidade": 2,
+          "valorUnitario": 89.9
+        },
+        {
+          "id": 109,
+          "produto": "Bermuda",
+          "quantidade": 1,
+          "valorUnitario": 69.9
+        },
+        {
+          "id": 110,
+          "produto": "Meia (par)",
+          "quantidade": 4,
+          "valorUnitario": 12.9
+        },
+        {
+          "id": 111,
+          "produto": "Jaqueta Corta-Vento",
+          "quantidade": 5,
+          "valorUnitario": 159.9
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "cliente": "Rafael Oliveira",
+      "data": "2026-07-02",
+      "itens": [
+        {
+          "id": 112,
+          "produto": "Calça Jeans",
+          "quantidade": 2,
+          "valorUnitario": 129.9
+        },
+        {
+          "id": 113,
+          "produto": "Luva",
+          "quantidade": 4,
+          "valorUnitario": 22.9
+        },
+        {
+          "id": 114,
+          "produto": "Colar",
+          "quantidade": 4,
+          "valorUnitario": 39.9
+        },
+        {
+          "id": 115,
+          "produto": "Chinelo",
+          "quantidade": 4,
+          "valorUnitario": 29.9
+        },
+        {
+          "id": 116,
+          "produto": "Tênis Esportivo",
+          "quantidade": 2,
+          "valorUnitario": 199.9
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "cliente": "Sabrina Gomes",
+      "data": "2026-05-07",
+      "itens": [
+        {
+          "id": 117,
+          "produto": "Cinto de Couro",
+          "quantidade": 3,
+          "valorUnitario": 44.9
+        },
+        {
+          "id": 118,
+          "produto": "Camiseta Básica",
+          "quantidade": 4,
+          "valorUnitario": 39.9
+        },
+        {
+          "id": 119,
+          "produto": "Luva",
+          "quantidade": 5,
+          "valorUnitario": 22.9
+        },
+        {
+          "id": 120,
+          "produto": "Tênis Casual",
+          "quantidade": 4,
+          "valorUnitario": 179.9
+        },
+        {
+          "id": 121,
+          "produto": "Regata",
+          "quantidade": 2,
+          "valorUnitario": 29.9
+        },
+        {
+          "id": 122,
+          "produto": "Camisa Social",
+          "quantidade": 2,
+          "valorUnitario": 89.9
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "cliente": "Thiago Batista",
+      "data": "2026-03-02",
+      "itens": [
+        {
+          "id": 123,
+          "produto": "Short",
+          "quantidade": 1,
+          "valorUnitario": 44.9
+        },
+        {
+          "id": 124,
+          "produto": "Pulseira",
+          "quantidade": 1,
+          "valorUnitario": 24.9
+        },
+        {
+          "id": 125,
+          "produto": "Blusa de Frio",
+          "quantidade": 5,
+          "valorUnitario": 109.9
+        },
+        {
+          "id": 126,
+          "produto": "Camiseta Estampada",
+          "quantidade": 4,
+          "valorUnitario": 49.9
+        },
+        {
+          "id": 127,
+          "produto": "Boné",
+          "quantidade": 5,
+          "valorUnitario": 34.9
+        }
+      ]
+    }
+  ]
+}

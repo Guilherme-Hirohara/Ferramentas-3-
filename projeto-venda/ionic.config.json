@@ -1,0 +1,7 @@
+{
+  "name": "projeto-venda",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
