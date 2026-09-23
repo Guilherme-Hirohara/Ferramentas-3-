@@ -24,7 +24,7 @@ export class VendaPage implements OnInit {
 
   protected vendas = signal<Vendas[]>([]); 
   protected api = inject(Api); 
-  protected id!: number; 
+  protected id: number=-1; 
   protected itens = signal<ItensVenda[]>([]); 
   protected total: number = 0; 
 
@@ -70,6 +70,8 @@ export class VendaPage implements OnInit {
           console.log("Venda deletada"); 
           this.getVenda(); 
           this.getItems(); 
+          this.total = 0; 
+          this.id = -1; 
         },
         error: () => {
           console.error("Erro ao excluir"); 
