@@ -1,0 +1,54 @@
+<ion-content class="auth-content">
+  <div class="auth-wrapper">
+    <ion-card class="auth-card">
+      <ion-card-header>
+        <div class="auth-avatar">
+          <ion-icon name="person-circle-outline"></ion-icon>
+        </div>
+        <ion-card-title>Bem-vindo de volta!</ion-card-title>
+        <ion-card-subtitle>Entre com suas credenciais para continuar</ion-card-subtitle>
+      </ion-card-header>
+
+      <ion-card-content>
+        <form [formGroup]="form" (ngSubmit)="realizarLogin()">
+          <ion-list lines="none">
+            <div class="input-field">
+              <ion-input
+                label="E-mail"
+                labelPlacement="floating"
+                placeholder="exemplo@email.com"
+                type="email"
+                fill="outline"
+                formControlName="email">
+              </ion-input>
+            </div>
+
+            <div class="input-field">
+              <ion-input
+                label="Senha"
+                labelPlacement="floating"
+                type="password"
+                fill="outline"
+                formControlName="password">
+                <ion-input-password-toggle slot="end"></ion-input-password-toggle>
+              </ion-input>
+            </div>
+
+            <div class="btn-group">
+              <ion-button expand="block" type="submit" color="primary">
+                Entrar
+              </ion-button>
+              <ion-button expand="block" fill="outline" color="medium" [routerLink]="['/']">
+                Voltar
+              </ion-button>
+            </div>
+
+            <div class="auth-footer">
+              <p>Não possui uma conta? <a (click)="navegar()">Cadastre-se aqui</a></p>
+            </div>
+          </ion-list>
+        </form>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

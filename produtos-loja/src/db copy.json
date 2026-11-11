@@ -1,0 +1,60 @@
+{
+  "produtos": [
+    {
+      "id": "5",
+      "nome": "Fone Bluetooth JBL Tune 520BT",
+      "categoria": "Áudio e Vídeo",
+      "preco": 299.9,
+      "quantidade": 18,
+      "fornecedor": "AudioTech"
+    },
+    {
+      "id": "6",
+      "nome": "Monitor LG UltraGear 24",
+      "categoria": "Informática",
+      "preco": 1199.9,
+      "quantidade": 6,
+      "fornecedor": "Tech Distribuidora"
+    },
+    {
+      "id": "7",
+      "nome": "Smart TV TCL 50 Polegadas",
+      "categoria": "Áudio e Vídeo",
+      "preco": 2499.9,
+      "quantidade": 4,
+      "fornecedor": "Casa Digital"
+    },
+    {
+      "id": "8",
+      "nome": "Cabo USB-C 2 Metros",
+      "categoria": "Acessórios",
+      "preco": 39.9,
+      "quantidade": 50,
+      "fornecedor": "Acessory Brasil"
+    },
+    {
+      "id": "9",
+      "nome": "Tablet Samsung Galaxy Tab A9",
+      "categoria": "Eletrônicos",
+      "preco": 999.9,
+      "quantidade": 12,
+      "fornecedor": "Mobile Center"
+    },
+    {
+      "id": "10",
+      "nome": "Webcam Logitech C920",
+      "categoria": "Periféricos",
+      "preco": 449.9,
+      "quantidade": 3,
+      "fornecedor": "Global Tech"
+    },
+    {
+      "id": "AHxTKGT",
+      "nome": "iphone",
+      "categoria": "Celulares",
+      "preco": "1200",
+      "quantidade": 100,
+      "fornecedor": "Gabriel"
+    }
+  ]
+}

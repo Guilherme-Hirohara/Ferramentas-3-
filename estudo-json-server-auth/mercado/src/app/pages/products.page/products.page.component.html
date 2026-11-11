@@ -1,0 +1,73 @@
+<ion-header translucent="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/admin"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Alterar Produto</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding form-content">
+  <div class="form-wrapper">
+    <ion-card class="form-card">
+      <ion-card-header>
+        <div class="card-header-icon">
+          <ion-icon name="create-outline"></ion-icon>
+        </div>
+        <ion-card-title>Editar Produto #{{ id }}</ion-card-title>
+        <ion-card-subtitle>Atualize as informações do item no catálogo</ion-card-subtitle>
+      </ion-card-header>
+
+      <ion-card-content>
+        <form [formGroup]="forms" (ngSubmit)="alterarProduto()">
+          <ion-list lines="none">
+            <div class="input-group">
+              <ion-input
+                label="Produto"
+                labelPlacement="floating"
+                type="text"
+                fill="outline"
+                formControlName="nome"
+                placeholder="Nome do produto">
+              </ion-input>
+            </div>
+
+            <div class="input-group">
+              <ion-input
+                label="Quantidade"
+                labelPlacement="floating"
+                type="number"
+                fill="outline"
+                formControlName="quantidade"
+                placeholder="0">
+              </ion-input>
+            </div>
+
+            <div class="input-group">
+              <ion-input
+                label="Valor Unitário (R$)"
+                labelPlacement="floating"
+                type="number"
+                step="0.01"
+                fill="outline"
+                formControlName="valorUnitario"
+                placeholder="0.00">
+              </ion-input>
+            </div>
+
+            <div class="action-buttons">
+              <ion-button color="success" type="submit" expand="block">
+                <ion-icon slot="start" name="checkmark-outline"></ion-icon>
+                Salvar Alterações
+              </ion-button>
+              <ion-button color="medium" fill="outline" expand="block" type="button" (click)="cancelar()">
+                <ion-icon slot="start" name="close-outline"></ion-icon>
+                Cancelar
+              </ion-button>
+            </div>
+          </ion-list>
+        </form>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

@@ -1,0 +1,12 @@
+
+<ion-header>
+    <ion-toolbar>
+        <ion-title>TaskFlow</ion-title>
+        <p>Entre com a sua conta para ver as suas tarefas</p>
+    </ion-toolbar>
+    <form [formGroup]="forms" (ngSubmit)="acessar()">
+        <ion-input label="Email" type="email" formControlName="email"></ion-input>
+        <ion-input label="Senha" type="password" formControlName="password"></ion-input>
+        <ion-button type="submit" disabled="{{validar()}}">Entrar</ion-button>
+    </form>
+</ion-header>

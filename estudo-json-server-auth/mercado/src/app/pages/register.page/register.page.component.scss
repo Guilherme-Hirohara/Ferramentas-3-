@@ -1,0 +1,75 @@
+.auth-content {
+  --background: var(--ion-color-step-50, #19191a);
+}
+
+.auth-wrapper {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 16px;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 480px;
+  margin: 0;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+
+  ion-card-header {
+    text-align: center;
+    padding-bottom: 8px;
+
+    .auth-avatar {
+      font-size: 3.2rem;
+      color: var(--ion-color-success, #2dd36f);
+      margin-bottom: 4px;
+    }
+
+    ion-card-title {
+      font-size: 1.35rem;
+      font-weight: 700;
+    }
+
+    ion-card-subtitle {
+      font-size: 0.88rem;
+      margin-top: 4px;
+    }
+  }
+
+  ion-card-content {
+    padding-top: 8px;
+  }
+}
+
+.name-row {
+  display: flex;
+  gap: 12px;
+
+  .half {
+    flex: 1;
+  }
+}
+
+.input-field {
+  margin-bottom: 14px;
+
+  ion-input {
+    --border-radius: 8px;
+    font-size: 0.95rem;
+  }
+}
+
+.btn-group {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  ion-button {
+    margin: 0;
+    font-weight: 600;
+    height: 44px;
+  }
+}

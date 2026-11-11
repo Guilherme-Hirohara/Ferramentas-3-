@@ -1,0 +1,61 @@
+.form-content {
+  --background: var(--ion-color-step-50, #19191a);
+}
+
+.form-wrapper {
+  max-width: 520px;
+  margin: 16px auto 0;
+}
+
+.form-card {
+  margin: 0;
+  border-radius: 14px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+
+  ion-card-header {
+    text-align: center;
+    padding-bottom: 8px;
+
+    .card-header-icon {
+      font-size: 2.8rem;
+      color: var(--ion-color-success, #2dd36f);
+      margin-bottom: 4px;
+    }
+
+    ion-card-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+    }
+
+    ion-card-subtitle {
+      font-size: 0.88rem;
+      margin-top: 4px;
+    }
+  }
+
+  ion-card-content {
+    padding-top: 8px;
+  }
+}
+
+.input-group {
+  margin-bottom: 16px;
+
+  ion-input {
+    --border-radius: 8px;
+    font-size: 0.95rem;
+  }
+}
+
+.action-buttons {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  ion-button {
+    margin: 0;
+    font-weight: 600;
+    height: 44px;
+  }
+}

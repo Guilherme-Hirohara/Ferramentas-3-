@@ -1,0 +1,69 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Produtos</ion-title>
+    <ion-button (click)="navegarCadastro()" slot="end">Cadastrar</ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+    <ion-grid> 
+      <ion-row>
+        <ion-col>
+          ID
+        </ion-col>
+        <ion-col>
+          PRODUTO
+        </ion-col>
+        <ion-col>
+          CATEGORIA
+        </ion-col>
+        <ion-col>
+          PRECO
+        </ion-col>
+        <ion-col>
+          QUANTIDADE
+        </ion-col> 
+        <ion-col>
+          FORNECEDOR
+        </ion-col>
+        <ion-col>
+          DELETAR
+        </ion-col>
+      </ion-row>
+      @for(item of produtos(); track $index){
+        <ion-row>
+          <ion-col>
+            {{$index + 1}}
+          </ion-col>
+          <ion-col>
+            {{item.nome}}
+          </ion-col>
+          <ion-col>
+            {{item.categoria}}
+          </ion-col>
+          <ion-col>
+            {{item.preco}}
+          </ion-col>
+          <ion-col>
+            {{item.quantidade}}
+          </ion-col>
+          <ion-col>
+            {{item.fornecedor}}
+          </ion-col>
+          <ion-col>
+            <ion-button id="deletar" (click)="deletarProduto(item.id)">
+              Deletar
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      }
+        <ion-alert 
+          trigger="deletar"
+          header="Deletar produto"
+          subHeader="Deseja realmente deletar este produto"
+          [buttons]="alertButtons"           
+        > 
+        </ion-alert>
+
+    </ion-grid>
+</ion-content>

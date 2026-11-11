@@ -1,0 +1,61 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>List of Products</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-input label="Brand" placeholder="Search a brand" [(ngModel)]="brandName">
+  </ion-input>
+  <ion-button (click)="getBrand()">Search</ion-button>
+  <ion-grid>
+    <ion-row> 
+      <ion-col>
+        Brand
+      </ion-col>
+      <ion-col>
+        Quantity
+      </ion-col>
+      <ion-col>
+        Name Product 
+      </ion-col>
+      <ion-col>
+        Biggest Price 
+      </ion-col>
+      <ion-col>
+
+      </ion-col>
+    </ion-row>
+    @for(item of productBrand(); track $index){
+      <ion-row> 
+        <ion-col> 
+          {{item.brand}}
+        </ion-col>
+        <ion-col>
+          {{item.quantity}}
+        </ion-col>
+        <ion-col>
+          {{item.name_product}} 
+        </ion-col>
+        <ion-col>
+          {{item.price | currency}}
+        </ion-col>
+        <ion-col>
+          <ion-button (click)="remover(true, $index)">Deletar</ion-button>
+          <ion-alert
+            [isOpen]="isAlertOpen"
+            header="Deletar"
+            message="Deseja realmente deletar este produto?"
+            [buttons]="alertButtons"
+            (didDismiss)="remover(false, -1)"
+          ></ion-alert>
+        </ion-col>
+      </ion-row>
+    }
+    <ion-row>
+      <ion-col>
+        Total: {{total | currency}}
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "produtos-loja",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

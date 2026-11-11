@@ -1,0 +1,48 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "admin@gmail.com",
+      "password": "123",
+      "name": "Guilherme Hirohara",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "email": "aluno@gmail.com",
+      "password": "123",
+      "name": "Gabriel Pontel",
+      "role": "user"
+    },
+    {
+      "id": 3,
+      "email": "prof@gmail.com",
+      "password": "123",
+      "name": "Vilson Maziero",
+      "role": "professor"
+    },
+    {
+      "id": 4,
+      "email": "lucas@gmail.com",
+      "password": "123",
+      "name": "Lucas Romão",
+      "role": "user"
+    }
+  ],
+  "tasks": [
+    {
+      "id": 3,
+      "title": "Verificar interceptor HTTP",
+      "description": "Validar envio automático do header Authorization com token JWT",
+      "priority": "media",
+      "done": true
+    },
+    {
+      "id": 5,
+      "title": "Exclusão com alerta Ionic",
+      "description": "Validar AlertController e exclusão via DELETE /tasks/:id",
+      "priority": "baixa",
+      "done": false
+    }
+  ]
+}

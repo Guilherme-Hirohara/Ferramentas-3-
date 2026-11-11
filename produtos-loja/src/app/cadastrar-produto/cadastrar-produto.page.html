@@ -1,0 +1,48 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Cadastrar</ion-title>
+    <ion-button slot="end" color="danger" [routerLink]="['/produto']" (click)="form.reset()">Voltar</ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+ <form [formGroup]="form">
+   <ion-list>
+     <ion-list-header>
+       <ion-label>Cadastro de produto</ion-label>
+      </ion-list-header>
+      
+      <ion-item> 
+        <ion-input label="Nome" placeholder="Digite seu nome" type="text" formControlName="nome"></ion-input>
+      </ion-item>
+      
+      <ion-item> 
+        <ion-select placeholder="Escolha a categoria" label="Categoria" formControlName="categoria">
+          @for(item of categoria;track $index){
+            <ion-select-option value="{{item}}">{{item}}</ion-select-option>
+          }
+        </ion-select>
+      </ion-item>
+      
+      <ion-item>
+        <ion-input placeholder="Digite o preço" label="Preço" formControlName="preco"></ion-input>
+      </ion-item>
+
+      <ion-item> 
+        <ion-input label="Quantidade" placeholder="Digite a quantidade" type="number" formControlName="quantidade"></ion-input>
+      </ion-item>
+      
+      <ion-item> 
+        <ion-input label="Fornecedor" placeholder="Digite um fornecedor" type="text" formControlName="fornecedor"></ion-input>
+      </ion-item>
+      
+      
+    </ion-list>
+      <ion-button id="cadastrar-produto" disabled="{{!form.valid}}">Cadastrar</ion-button>
+      <ion-alert
+      trigger="cadastrar-produto"
+      header="Deseja realmente cadastrar"
+      [buttons]="alertButton"
+    ></ion-alert>
+  </form>
+</ion-content>

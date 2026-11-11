@@ -1,0 +1,33 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Usuários</ion-title>
+        <p slot="end">{{ payload?.name }} ({{ payload?.role }})</p>
+        <ion-button slot="end" (click)="logout()">
+            <ion-icon>
+                <ion-icon name="log-out-outline"></ion-icon>
+            </ion-icon>
+        </ion-button>
+    </ion-toolbar>
+</ion-header>
+<ion-content>
+    <ion-grid>
+        <ion-row>
+            <ion-col>Nome</ion-col>
+            <ion-col>Email</ion-col>
+            <ion-col>Perfil</ion-col>
+        </ion-row>
+    @for(item of users(); track $index){
+            <ion-row>
+                <ion-col>
+                    {{item.name}}
+                </ion-col>
+                <ion-col>
+                    {{item.email}}
+                </ion-col>
+                <ion-col>
+                    {{item.role}}
+                </ion-col>
+            </ion-row>
+        }
+    </ion-grid>
+</ion-content>

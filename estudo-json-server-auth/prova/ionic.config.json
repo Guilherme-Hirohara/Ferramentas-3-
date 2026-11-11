@@ -1,0 +1,7 @@
+{
+  "name": "prova",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

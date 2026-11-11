@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Minhas tarefas</ion-title>
+    <p slot="end">{{ payload?.name }} ({{ payload?.role }})</p>
+    <ion-button [routerLink]="['/admin/users']" slot="end">Lista de usuários</ion-button>
+    <ion-button slot="end" (click)="logout()">
+      <ion-icon name="log-out-outline"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-list>
+      <ion-header>
+          <ion-title>Prioridade</ion-title>
+          <ion-list>
+          <ion-item>
+            <ion-select
+              aria-label="Prioridade"
+              placeholder="Selecione o filtro"
+              (ionChange)="handleChange($event)"
+            slot="end">
+              <ion-select-option value="Todas">Todas</ion-select-option>
+              <ion-select-option value="alta">alta</ion-select-option>
+              <ion-select-option value="media">media</ion-select-option>
+              <ion-select-option value="baixa">baixa</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-list>
+      </ion-header>
+    @if (tarefas().length) {
+      @for (item of tarefas(); track $index) {
+        <ion-item>
+          <div>
+            <h4>{{ item.title }}</h4>
+            <p slot="end">{{ item.priority }}</p>
+            <ion-button color="danger" slot="end" (click)="presentAlert(item.id)" id="deletar">
+              <ion-icon name="trash"></ion-icon>
+            </ion-button>
+          </div>
+          <p>{{ item.description }}</p>
+        </ion-item>
+      }
+    } @else {
+      <p>Lista vazia</p>
+    }
+  </ion-list>
+</ion-content>

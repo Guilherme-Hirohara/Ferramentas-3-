@@ -1,0 +1,73 @@
+<ion-header translucent="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/admin"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Novo Produto</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding form-content">
+  <div class="form-wrapper">
+    <ion-card class="form-card">
+      <ion-card-header>
+        <div class="card-header-icon">
+          <ion-icon name="add-circle-outline"></ion-icon>
+        </div>
+        <ion-card-title>Adicionar Novo Produto</ion-card-title>
+        <ion-card-subtitle>Cadastre um item no estoque do mercado</ion-card-subtitle>
+      </ion-card-header>
+
+      <ion-card-content>
+        <form [formGroup]="forms" (ngSubmit)="adicionarProduto()">
+          <ion-list lines="none">
+            <div class="input-group">
+              <ion-input
+                label="Nome do produto"
+                labelPlacement="floating"
+                formControlName="nome"
+                placeholder="Ex: Arroz Tipo 1 - 5kg"
+                type="text"
+                fill="outline">
+              </ion-input>
+            </div>
+
+            <div class="input-group">
+              <ion-input
+                label="Quantidade em estoque"
+                labelPlacement="floating"
+                formControlName="quantidade"
+                placeholder="Ex: 50"
+                type="number"
+                fill="outline">
+              </ion-input>
+            </div>
+
+            <div class="input-group">
+              <ion-input
+                label="Preço Unitário (R$)"
+                labelPlacement="floating"
+                formControlName="valorUnitario"
+                placeholder="Ex: 19.90"
+                type="number"
+                step="0.01"
+                fill="outline">
+              </ion-input>
+            </div>
+
+            <div class="action-buttons">
+              <ion-button color="success" type="submit" expand="block">
+                <ion-icon slot="start" name="checkmark-outline"></ion-icon>
+                Cadastrar Produto
+              </ion-button>
+              <ion-button color="medium" fill="outline" expand="block" [routerLink]="['/admin']">
+                <ion-icon slot="start" name="close-outline"></ion-icon>
+                Cancelar
+              </ion-button>
+            </div>
+          </ion-list>
+        </form>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

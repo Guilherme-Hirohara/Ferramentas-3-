@@ -1,0 +1,74 @@
+{
+  "users": [
+    {
+      "email": "gui@gmail.com",
+      "password": "$2a$10$pD3fdjafxmoXRn7wbr4wzuN9rdtpZM817e4XaP7g5GTX.J/tlRnpW",
+      "firstName": "Guilherme",
+      "lastName": "Hirohara",
+      "age": 20,
+      "cargo": "Admin",
+      "id": 1
+    },
+    {
+      "email": "test@example.com",
+      "password": "$2a$10$yYmCHfL7AClrVNw08NyJW.MT9FUua766fuBr0BWMjo46kAx.7lxwe",
+      "id": 2
+    },
+    {
+      "email": "guilherme@gmail.com",
+      "password": "$2a$10$.EyvZJUNetIvOGiO4Wsa7ON5.dIzqL7BMNJHyo4awcddDaEebB0Nu",
+      "firstName": "Guilherme",
+      "lastName": "Hirohara",
+      "age": 20,
+      "cargo": "Admin",
+      "id": 3
+    },
+    {
+      "email": "pedro@gmail.com",
+      "password": "$2a$10$HVdMeh5AHQgk38r/WXdphOzwWjdeTioK8oeZ8Q3f6KxY77Lmf.AYC",
+      "firstName": "Pedro ",
+      "lastName": "Plinio",
+      "age": 20,
+      "cargo": "Admin",
+      "id": 4
+    }
+  ],
+  "produtos": [
+    {
+      "nome": "Arroz 5kg",
+      "quantidade": 100,
+      "valorUnitario": 25,
+      "id": 1
+    },
+    {
+      "id": 2,
+      "nome": "Feijão Carioca 1kg",
+      "quantidade": 40,
+      "valorUnitario": 8.5
+    },
+    {
+      "id": 3,
+      "nome": "Óleo de Soja 900ml",
+      "quantidade": 30,
+      "valorUnitario": 6.99
+    },
+    {
+      "id": 4,
+      "nome": "Café Torrado e Moído 500g",
+      "quantidade": 18,
+      "valorUnitario": 19.8
+    },
+    {
+      "id": 5,
+      "nome": "Leite Integral 1L",
+      "quantidade": 60,
+      "valorUnitario": 5.49
+    },
+    {
+      "id": 6,
+      "nome": "Refrigerante Cola 2L",
+      "quantidade": 35,
+      "valorUnitario": 9.9
+    }
+  ]
+}

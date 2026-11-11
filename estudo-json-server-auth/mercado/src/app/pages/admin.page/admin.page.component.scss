@@ -1,0 +1,153 @@
+.admin-content {
+  --background: var(--ion-color-step-50, #19191a);
+}
+
+.admin-card {
+  margin: 0 auto;
+  max-width: 960px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.07);
+
+  ion-card-header {
+    padding: 16px 20px 12px;
+    border-bottom: 1px solid var(--ion-color-step-150, #eee);
+  }
+
+  .header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+
+    ion-card-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+
+    ion-card-subtitle {
+      font-size: 0.85rem;
+    }
+
+    .total-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 12px;
+      border-radius: 16px;
+    }
+  }
+
+  .table-container {
+    padding: 0;
+  }
+}
+
+.products-grid {
+  padding: 0;
+
+  .grid-header {
+    background: var(--ion-color-step-100, #f1f3f5);
+    border-bottom: 2px solid var(--ion-color-step-200, #e2e8f0);
+    padding: 10px 16px;
+
+    .header-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      color: var(--ion-color-step-600, #666);
+      text-transform: uppercase;
+    }
+  }
+
+  .grid-row {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--ion-color-step-150, #f0f0f0);
+    align-items: center;
+    transition: background 0.15s ease;
+
+    &:nth-child(even) {
+      background: var(--ion-color-step-50, rgba(0, 0, 0, 0.015));
+    }
+
+    &:hover {
+      background: rgba(var(--ion-color-primary-rgb, 56, 128, 255), 0.06);
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    .col-product {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      ion-icon {
+        color: var(--ion-color-primary, #3880ff);
+        font-size: 1.1rem;
+        flex-shrink: 0;
+      }
+
+      .item-name {
+        font-weight: 600;
+        font-size: 0.95rem;
+      }
+    }
+
+    .qty-badge {
+      font-size: 0.8rem;
+      padding: 4px 8px;
+      border-radius: 6px;
+    }
+
+    .price-value {
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: var(--ion-color-success-shade, #28ba62);
+    }
+
+    .total-value {
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: var(--ion-color-step-700, #555);
+    }
+
+    .col-actions {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+
+      ion-button {
+        --padding-start: 6px;
+        --padding-end: 6px;
+        height: 28px;
+        font-size: 0.75rem;
+      }
+    }
+  }
+}
+
+.empty-state {
+  padding: 40px 16px;
+  text-align: center;
+  color: var(--ion-color-step-500, #888);
+
+  ion-icon {
+    font-size: 3rem;
+    margin-bottom: 8px;
+    color: var(--ion-color-step-400, #aaa);
+  }
+
+  h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0 0 4px;
+    color: var(--ion-text-color, #222);
+  }
+
+  p {
+    margin: 0;
+    font-size: 0.85rem;
+  }
+}

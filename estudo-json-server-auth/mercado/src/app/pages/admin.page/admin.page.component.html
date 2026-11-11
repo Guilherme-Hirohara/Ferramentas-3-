@@ -1,0 +1,92 @@
+<ion-header translucent="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Painel Admin</ion-title>
+    <ion-buttons slot="end">
+      <ion-button fill="clear">
+        <ion-icon slot="icon-only" name="person-circle-outline"></ion-icon>
+      </ion-button>
+      <ion-button fill="solid" color="success" [routerLink]="['/products-add']">
+        <ion-icon slot="start" name="add-outline"></ion-icon>
+        Novo Produto
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding admin-content">
+  <ion-card class="admin-card">
+    <ion-card-header>
+      <div class="header-wrapper">
+        <div>
+          <ion-card-title>Produtos Cadastrados</ion-card-title>
+          <ion-card-subtitle>Gerenciamento do estoque de mercadorias</ion-card-subtitle>
+        </div>
+        <ion-badge color="primary" class="total-badge">
+          <ion-icon name="cube-outline"></ion-icon>
+          <span>{{ produtos().length }} itens</span>
+        </ion-badge>
+      </div>
+    </ion-card-header>
+
+    <ion-card-content class="table-container">
+      @if (produtos().length > 0) {
+        <ion-grid class="products-grid">
+          <ion-row class="grid-header">
+            <ion-col size="3">
+              <span class="header-label">PRODUTO</span>
+            </ion-col>
+            <ion-col size="2" class="ion-text-center">
+              <span class="header-label">QTD</span>
+            </ion-col>
+            <ion-col size="2" class="ion-text-end">
+              <span class="header-label">VALOR UN</span>
+            </ion-col>
+            <ion-col size="2" class="ion-text-end">
+              <span class="header-label">TOTAL</span>
+            </ion-col>
+            <ion-col size="3" class="ion-text-center">
+              <span class="header-label">AÇÕES</span>
+            </ion-col>
+          </ion-row>
+
+          @for (item of produtos(); track $index) {
+            <ion-row class="grid-row">
+              <ion-col size="3" class="col-product">
+                <ion-icon name="pricetag-outline" class="item-icon"></ion-icon>
+                <span class="item-name">{{ item.nome }}</span>
+              </ion-col>
+              <ion-col size="2" class="col-quantity ion-text-center">
+                <ion-badge color="medium" class="qty-badge">
+                  {{ item.quantidade }}
+                </ion-badge>
+              </ion-col>
+              <ion-col size="2" class="col-price ion-text-end">
+                <span class="price-value">{{ formatarPreco(item.valorUnitario) }}</span>
+              </ion-col>
+              <ion-col size="2" class="col-price ion-text-end">
+                <span class="total-value">{{ getTotal(item.valorUnitario, item.quantidade) }}</span>
+              </ion-col>
+              <ion-col size="3" class="col-actions ion-text-center">
+                <ion-button fill="outline" size="small" color="warning" [routerLink]="['/products', ($index + 1)]">
+                  Alterar
+                </ion-button>
+                <ion-button fill="outline" size="small" color="danger" (click)="deletarProduto($index + 1)">
+                  <ion-icon slot="icon-only" name="trash"></ion-icon>
+                </ion-button>
+              </ion-col>
+            </ion-row>
+          }
+        </ion-grid>
+      } @else {
+        <div class="empty-state">
+          <ion-icon name="layers-outline" class="empty-icon"></ion-icon>
+          <h3>Nenhum produto cadastrado</h3>
+          <p>Clique em "Novo Produto" para adicionar itens ao catálogo.</p>
+        </div>
+      }
+    </ion-card-content>
+  </ion-card>
+</ion-content>
